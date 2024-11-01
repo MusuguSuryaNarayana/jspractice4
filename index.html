@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Methods in String</title>
+    </head>
+    <body>
+        <pre>
+            //ASSESSMENT-4
+//Methods in strings
+
+// -----JOIN METHOD-----
+//Q-1
+var fruits = ['Apple','Banana','Orange'];
+c=fruits.join()
+console.log('"',c,'"')
+OUTPUT:" Apple,Banana,Orange "
+
+//Q-2
+var numbers=[1,2,3,4,5];
+x=numbers.join("-");
+console.log('"',x,'"');
+OUTPUT:" 1-2-3-4-5 "
+
+//Q-3
+var chars=['H','e','l','l','o'];
+x=chars.join("")
+console.log('"',x,'"');
+OUTPUT:" Hello "
+
+//-----Slice Methods-------
+//Q-4
+var text='Javascript is awesome';
+x=text.slice(0,11);
+console.log('"',x,'"');
+OUTPUT:" Javascript  "
+
+//Q-5
+var sentence='I love Learning JavaScript!';
+x=sentence.slice(7,16);
+console.log('"',x,'"');
+OUTPUT:" Learning  "
+
+//Q-6
+//using Negative index
+var text='Frontend Development';
+x=text.slice(-11);
+console.log('"',x,'"');
+OUTPUT:" Development "
+
+//-----split method---
+//Q-7
+var date = '2024-10-21';
+x=date.split("-")
+console.log(x);
+OUTPUT:[ '2024', '10', '21' ]
+
+//Q-8
+var text = 'I love JavaScript programming';
+x = text.slice(0,6);
+y = x.split(" ")
+console.log(y)
+OUTPUT:[ 'I', 'love' ]
+
+//  Q-9
+let url = "https://www.example.com/path/page/.html";
+x = url.split("/");
+console.log(x)
+OUTPUT:[ 'https:', '', 'www.example.com', 'path', 'page', '.html' ]
+        </pre>
+    </body>
+</html>
